@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop Game</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="list1" class="list" ondragover="allowDrop(event)" ondrop="drop(event)">
+      <h3>Available Items</h3>
+      <div class="item" draggable="true" ondragstart="drag(event)" id="item1">Item 1</div>
+      <div class="item" draggable="true" ondragstart="drag(event)" id="item2">Item 2</div>
+      <div class="item" draggable="true" ondragstart="drag(event)" id="item3">Item 3</div>
+    </div>
+    <div id="list2" class="list" ondragover="allowDrop(event)" ondrop="drop(event)">
+      <h3>Drop Here</h3>
+    </div>
+  </div>
+</body>
+</html>
