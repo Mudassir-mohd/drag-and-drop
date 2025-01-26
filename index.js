@@ -11,8 +11,8 @@ function drag(event) {
 
 function drop(event) {
   event.preventDefault();
-  const data = event.dataTransfer.getData("text");
-  const draggedElement = document.getElementById(data);
+  let data = event.dataTransfer.getData("text");
+  let draggedElement = document.getElementById(data);
   if (event.target.classList.contains("list")) {
     event.target.appendChild(draggedElement);
   } else if (event.target.parentElement.classList.contains("list")) {
